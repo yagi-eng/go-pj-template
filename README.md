@@ -25,8 +25,8 @@ Goをいい感じに始められるサンプル・ひな形です。
 [Goの新規プロジェクト作成方法とおすすめライブラリ8.5選。ひな形もあるよ。]()
 
 # 本プロジェクトに含まれる内容
-- MySQL接続
-- DB migrationのサンプル
-- DB Read/Writeのサンプル
-- echoを使ったルーティング、ロギング、CORS設定
-- `godotenv`ライブラリを使った`.env`ファイルの読み込み
+- `gorm`を使ったMySQL接続
+- `gorm`を使ったDB migrationのサンプル
+- `gorm`を使ったDB Read/Writeのサンプル
+- `echo`を使ったルーティング、ロギング、CORS設定
+- `godotenv`を使った`.env`ファイルの読み込み
