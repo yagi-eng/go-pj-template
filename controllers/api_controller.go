@@ -1,8 +1,9 @@
 package controllers
 
 import (
+	"net/http"
+
 	"github.com/labstack/echo"
-	"github.com/valyala/fasthttp"
 	"github.com/yagi-eng/go-pj-template/model"
 	"gorm.io/gorm"
 )
@@ -12,7 +13,7 @@ func GetUsers(db *gorm.DB) echo.HandlerFunc {
 	return func(c echo.Context) error {
 		var users []model.User
 		db.Find(&users)
-		return c.JSON(fasthttp.StatusOK, users)
+		return c.JSON(http.StatusOK, users)
 	}
 }
 
@@ -22,6 +23,6 @@ func CreateUser(db *gorm.DB) echo.HandlerFunc {
 		userName := c.QueryParam("name")
 		user := model.User{Name: userName}
 		db.Create(&user)
-		return c.JSON(fasthttp.StatusOK, user)
+		return c.JSON(http.StatusOK, user)
 	}
 }
