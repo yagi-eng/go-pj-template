@@ -33,4 +33,5 @@ Goをいい感じに始められるサンプル・ひな形です。
 
 # template v2はこちら
 https://github.com/yagi-eng/go-pj-template2
+
 最近はこちらを使うことが多い。いつか解説記事書く
