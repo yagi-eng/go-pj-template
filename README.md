@@ -30,3 +30,7 @@ Goをいい感じに始められるサンプル・ひな形です。
 - `gorm`を使ったDB Read/Writeのサンプル
 - `echo`を使ったルーティング、ロギング、CORS設定
 - `godotenv`を使った`.env`ファイルの読み込み
+
+# template v2はこちら
+https://github.com/yagi-eng/go-pj-template2
+最近はこちらを使うことが多い。いつか解説記事書く
